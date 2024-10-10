@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>This is a Website</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        background-color: hsla(46, 69%, 85%, 0.925);
+      }
+      .container {
+        text-align: center;
+        width: 20%;
+        height: 40%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(240, 154, 217);
+        box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgb(240, 154, 217);
+        border-radius: 70px;
+      }
+      h1 {
+        color: black;
+        font-weight: bold;
+      }
+      button {
+        background-color: rgb(225, 201, 247);
+        display: grid;
+        padding: auto;
+        width: 20%;
+        margin: auto;
+        color: black;
+        border: none;
+
+        padding: 1%;
+      }
+      button:hover {
+        background-color: rgb(164, 83, 240);
+      }
+      .login-GIF {
+        width: 100px;
+        height: 100px;
+        margin: 0% auto 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Log In</h1>
+      <form onsubmit="return validLogin()">
+        <img src="pictyur/kyut.gif" class="login-GIF" />
+        <div class="row mb-3">
+          <!-- The 'for' should match the 'id' of the input field -->
+
+          <label for="inputUsername" class="col-sm-2 col-form- label"
+            >Username</label
+          >
+
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="inputUsername"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <!-- The 'for' should match the 'id' of the input field -->
+
+          <label for="inputPassword" class="col-sm-2 col-form- label"
+            >Password</label
+          >
+
+          <div class="col-sm-10">
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <!-- The 'for' should match the 'id' of the checkbox -->
+              <input class="form-check-input" type="checkbox" id="gridCheck1" />
+              <label class="form-check-label" for="gridCheck1">
+                Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          onclick="window.open('./homepage.html')"
+        >
+          Log In
+        </button>
+      </form>
+      <script>
+        function validLogin() {
+          const username = document.getElementById("inputUsername").value;
+          const password = document.getElementById("inputPassword").value;
+          const allowedUsernames = ["admin"];
+          const correctPassword = "password123";
+          if (
+            allowedUsernames.includes(username) &&
+            password === correctPassword
+          ) {
+            alert("Login successful");
+            return true;
+          } else {
+            alert("Invalid username or password");
+            return false;
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
