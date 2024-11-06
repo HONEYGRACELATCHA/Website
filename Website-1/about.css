@@ -1,0 +1,96 @@
+body{
+    background-image: url("pictyur/538714.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1{
+    color: rgb(250, 250, 250), rgb(241, 241, 247);
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+  }
+  p{
+    color: rgb(250, 250, 250), rgb(255, 255, 255);
+    text-align: center;
+    text-wrap: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+  }
+  .header {
+    overflow: hidden;
+    background-color: rgb(130, 133, 129);
+    /*padding: 20px 10px;*/
+  }
+  
+  .header img{
+    height: 50px;
+    width: 50px;
+  }
+  
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(10, 10, 10);
+    color: White;
+  }
+  
+  .header a.active {
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-Right {
+    float: right;
+  }
+  
+  .footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(130, 133, 129);
+    color: rgba(7, 7, 7, 0.048);
+    text-align: center;
+  }
+  #content{
+    color: maroon;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+  }
+  ul.services {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.services li {
+    margin-bottom: 20px;
+    font-size: 1.4rem; /* Increase overall text size */
+}
+
+ul.services li strong {
+    font-size: 1.6rem; /* Make the titles a bit larger */
+    color: #2333b3; /* Keep the title color as blue or adjust as needed */
+}
